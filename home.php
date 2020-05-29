@@ -51,7 +51,7 @@ get_header();
         ?>
     </section>
     <?php
-        if (is_active_sidebar('home-about-slider')) {
+        if (is_active_sidebar('home-applications')) {
             dynamic_sidebar( 'home-applications' );
         }
     ?>
