@@ -1,0 +1,393 @@
+/*
+Theme Name: Kailaji Theme
+Theme URI: http://example.com/twenty-fifteen-child/
+description: >-
+  Kailaji Allows Theme
+Author: Shashank Agarwal
+Author URI: http://github.com/shashank1010
+Template: andrina-lite
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
+Text Domain: kailaji-alloys
+*/
+p + p {
+  margin-top: 0.5rem;
+}
+a {
+  color: #327ea4;
+}
+.d-flex {
+  display: flex;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+.gallery .gallery-item img{
+  border: 0 !important;
+  max-width: 100%;
+  height: auto;
+}
+#header {
+  background: #0b3459;
+  display: flex;
+  align-items: center;
+}
+#header img {
+  margin: 0;
+}
+#header a {
+  color: #fff;
+}
+
+.main-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#menu .ddsmoothmenu .menu-item.fa{
+  color: #fff;
+  position: relative;
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 0 0.5rem;
+}
+#menu .ddsmoothmenu .menu-item.fa a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: rgba(0,0,0,0);
+  font-size: 0;
+}
+
+#product-menu {
+  height: 39px;
+  max-height: 39px;
+  z-index: 10;
+  position: relative;
+}
+#product-menu:before{
+  position: absolute;
+  top: 0.2rem;
+  bottom: 0.2rem;
+  left: 0;
+  right: 0;
+  border: 0 dashed #777;
+  border-width: 2px 0;
+  content: '';
+  display: block;
+}
+#product-menu .product-menu {
+  display: flex;
+  text-align: center;
+}
+#product-menu .product-menu > .menu-item {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: calc(100% / 7);
+}
+#product-menu .product-menu .menu-item a {
+  padding: 0.5rem;
+  display: block;
+  color: #327ea4;
+}
+#product-menu .product-menu > .menu-item > a {
+  white-space: nowrap;
+  position: relative;
+  text-decoration: none;
+}
+#product-menu .product-menu > .menu-item > a:after {
+  position: absolute;
+  height: calc(0.2rem + 1px);
+  bottom: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  content: '';
+  display: block;
+  background: red;
+  visibility: hidden;
+}
+#product-menu .product-menu > .menu-item:hover > a:after {
+  visibility: visible;
+}
+#product-menu .product-menu .sub-menu {
+  display: none;
+  background: #fff;
+  flex: 1;
+  width: 100%;
+}
+#product-menu .product-menu .sub-menu .menu-item {
+  list-style: none;
+}
+#product-menu .product-menu:hover .menu-item .sub-menu {
+  display: block;
+}
+#product-menu .product-menu .menu-item .sub-menu a {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  word-break: break-all;
+  word-break: break-word;
+}
+
+#product-menu .product-menu a:hover,
+#product-menu .product-menu .current-menu-ancestor > a,
+#product-menu .product-menu .current-menu-item > a {
+  color: red;
+}
+.flexslider {
+  height: auto !important;
+  margin: 0 !important;
+  background: none !important;
+}
+
+.slider-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper .slides img {
+  width: 100%;
+  margin: 0;
+}
+.slider-wrapper .caption-wrapper {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  text-align: center;
+}
+.slider-wrapper .caption-wrapper h2 {
+  font-weight: 300;
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-shadow: 5px 5px 2px #000;
+}
+/*
+  Home Sections
+*/
+.full-content > section {
+  padding: 4rem 0;
+  background-attachment: fixed;
+}
+
+.full-content section h2 {
+  margin-bottom: 1.5rem;
+}
+.full-content section:not(.about-section-wrapper) h2 span {
+  position: relative;
+  display: inline-block;
+  line-height: 3rem;
+  font-size: 1.6rem;
+}
+.full-content section:not(.about-section-wrapper) h2 span:after{
+  content: '';
+  display: block;
+  top: 100%;
+  left: 1rem;
+  right: 1rem;
+  position: absolute;
+  border: 1px solid #fff;
+}
+
+
+/**
+  About Section
+*/
+.about-section-wrapper {
+  background-color: #fff;
+  background: url('./assets/images/backgrounds/white-bg.jpg') center/cover no-repeat;
+}
+
+.about-section-wrapper .about-section {
+  display: flex;
+  padding: 0;
+}
+
+.about-section-wrapper .about-section .about-slider {
+  position: relative;
+  border-left: 2px dashed #327ea4;
+}
+
+.about-section-wrapper .about-section .about-slider h2 {
+  font-size: 1.3;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid;
+  margin-bottom: 1rem;
+}
+.about-section-wrapper .about-section .about-slider .flex-control-paging {
+  top: 0.15rem;
+  bottom: auto;
+  right: 1rem;
+  display: block;
+  width: auto;
+  margin: 0;
+  z-index: 2;
+}
+.about-section-wrapper .about-section .about-slider img {
+  margin-bottom: 0;
+}
+.about-section-wrapper .about-section .about-slider .textwidget{
+  display: flex;
+}
+.about-section-wrapper .about-section .about-slider .textwidget > *{
+  flex: 1;
+  margin-top: 0;
+}
+.about-section-wrapper .about-section .about-slider .textwidget ul {
+  list-style: none;
+}
+.about-section-wrapper .about-section .about-slider .textwidget ol{
+  padding-left: 2rem;
+}
+.about-section-wrapper .about-section > * {
+  width: 50%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/**
+  Feature Section
+*/
+.feature-section {
+  background-color: #f5f5f5;
+  background: url('./assets/images/backgrounds/weld-bg.jpg') center/cover no-repeat;
+  color: #fff;
+}
+.feature-section .feature-item {
+  text-align: center;
+}
+
+.feature-section .feature_item_img img{
+  width: 100%;
+}
+
+/**
+  Why Us
+*/
+.full-content section.why-us-section h2 {
+  color: #327ea4;
+}
+.full-content section.why-us-section h2 span:after{
+  border-color: #327ea4;
+}
+.why-us-section {
+  background-color: #fff;
+  background: url('./assets/images/backgrounds/white-bg.jpg') center/cover no-repeat
+}
+
+.why-us-section .feature-item {
+  text-align: center;
+}
+.why-us-section .feature-item h4 {
+  color: #327ea4;
+  margin-bottom: 1rem;
+}
+
+.why-us-section .feature_item_img img{
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+  Applications Section
+*/
+.applications-section {
+  background-color: #102246;
+  background: url('./assets/images/backgrounds/applications.jpg') center bottom/cover no-repeat;
+  color: #fff;
+}
+.applications-section .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.applications-section .gallery br {
+  display: none;
+}
+.applications-section .gallery .gallery-item {
+  margin-top: 0 !important;
+  float: none !important;
+}
+.applications-section .gallery br ~ .gallery-item {
+  margin-top: 2rem !important;
+}
+
+/**
+  Packaging Section
+*/
+
+.packaging-section {
+  background-color: #102246;
+  background: url('./assets/images/backgrounds/weld-bg.jpg') center bottom/cover no-repeat;
+  color: #fff;
+  text-align: center;
+}
+.packaging-section .gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.packaging-section .gallery br {
+  display: none;
+}
+.packaging-section .gallery .gallery-item {
+  margin-top: 0 !important;
+  float: none !important;
+}
+.packaging-section .gallery br ~ .gallery-item {
+  margin-top: 2rem !important;
+}
+
+section.post-packaging-data {
+  padding: 2rem 0;
+}
+
+
+/**
+  Footer
+*/
+footer {
+  background: #04161f;
+  color: #fff;
+  padding: 2rem 0;
+}
+footer a,
+footer a:hover,
+footer a:active,
+footer a:focus{
+  color: #fff;
+}
+footer .menu-item {
+  list-style: none;
+  line-height: 2;
+}
+footer .full-width-footer {
+  padding: 0;
+  display: flex;
+  margin-top: 2rem;
+}
+footer .full-width-footer > .widget {
+  list-style: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+footer .full-width-footer > .widget .widgettitle{
+  line-height: 2rem;
+  text-decoration: underline;
+}
+
+.page-image {
+  max-height: 200px;
+  overflow: hidden;
+}
+.page-image img{
+  max-width: 100%;
+}
