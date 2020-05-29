@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/kaila5ch/public_html/v2/wp-content/themes/kailaji-theme
+    - /bin/cp -R ./ $DEPLOYPATH
