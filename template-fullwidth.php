@@ -4,24 +4,20 @@
  */
 ?>
 <?php get_header(); ?>
-	<?php
-		// check if the post has a Post Thumbnail assigned to it.
-		if ( has_post_thumbnail() ) {
-			?>
-			<div class='page-image'>
-				<?php
+	<div class='page-image container-fluid text-center'>
+		<div class="page_head">
+			<h1 class="page_title fullwidth-heading single-heading"><?php the_title(); ?></h1>
+		</div>
+		<?php
+			// check if the post has a Post Thumbnail assigned to it.
+			if ( has_post_thumbnail() ) {
 				the_post_thumbnail();
-				?>
-			</div>
-			<?php
-		}
-	?>
+			}
+		?>
+	</div>
 	<div class="full-content">
 		<section>
 			<div class="container">
-				<div class="page_head">
-					<h1 class="page_title fullwidth-heading single-heading"><?php the_title(); ?></h1>
-				</div>
 				<div class="full-width">           
 					<?php if ( have_posts() ) : the_post(); 
 						the_content();
