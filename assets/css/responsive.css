@@ -158,7 +158,7 @@
         top: 101px;
         height: calc(100vh - 101px) !important;
     }
-    .admin-bar #header {
+    .admin-bar #header-wrapper {
         top: 46px;
     }
 }
