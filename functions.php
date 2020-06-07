@@ -246,9 +246,13 @@
         wp_dequeue_style('andrina-responsive');
         wp_dequeue_style('andrina-Montserrat-font');
         wp_dequeue_style('andrina-opensans-font');
+        wp_dequeue_style('andrina-font_awesome');
+        wp_dequeue_style('andrina-font-awesome');
+        wp_dequeue_style('andrina-fontawesome');
     }
 
     function kailaji_enqueue_styles() {
+        wp_enqueue_style('kailaji-fontawesome', KAILAJI_DIR_URI . "assets/font-awesome/css/font-awesome.css", '', '', 'all');
         wp_enqueue_style('kailaji-responsive', KAILAJI_DIR_URI . "assets/css/responsive.css", '', '', 'all');
     }
 

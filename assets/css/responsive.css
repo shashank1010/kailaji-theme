@@ -53,9 +53,6 @@
     }
 }
 @media (max-width: 767px) {
-    .site-title {
-        display: none;
-    }
     .admin-bar .mean-container .mean-bar .meanclose {
         top: 101px;
     }
