@@ -1,10 +1,4 @@
-.mean-container #menu-product-menu {
-    top: 56px;
-    height: calc(100vh - 56px) !important;
-}
-.mean-container .mean-bar .meanclose {
-    top: 56px;
-}
+
 @media (max-width: 991px) {
     #header #menu li:not(.fa) {
         display: none;
@@ -29,6 +23,17 @@
         z-index: 3;
         overflow: auto;
         line-height: 1.7;
+        top: 56px;
+        height: calc(100vh - 56px) !important;
+    }
+    .mean-container .mean-bar .meanmenu-reveal.meanclose {
+        top: 56px;
+        position: fixed;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0;
+        display: block;
+        z-index: 3;
     }
     .mean-container #menu-product-menu .menu-item {
         display: flex;
@@ -53,15 +58,6 @@
     }
     .admin-bar .mean-container .mean-bar .meanclose {
         top: 101px;
-    }
-    .mean-bar .meanclose {
-        position: fixed;
-        top: 56px;
-        left: 0 !important;
-        right: 0 !important;
-        bottom: 0;
-        display: block;
-        z-index: 3;
     }
 
     .slider-wrapper .caption-wrapper {
