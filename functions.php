@@ -148,44 +148,15 @@
     }
 
     function kailaji_dequeue_scripts() {
-        if (!is_admin()) {
-            wp_dequeue_script('andrina-ddsmoothmenu', ANDRINA_DIR_URI . 'assets/js/ddsmoothmenu.js', array('jquery'));
-            wp_dequeue_script('andrina-custom', ANDRINA_DIR_URI . 'assets/js/custom.js', array('jquery'));
-
-
-            /**
-             * Zoom Box JS File
-             * Dependency : jQuery
-             */
-            // wp_dequeue_script('andrina-zoombox', ANDRINA_DIR_URI . 'assets/js/zoombox.js', array('jquery'));
-            /**
-             * customizer preview
-             * Dependency : jQuery
-             */
-            //wp_enqueue_script('andrina-preview', ANDRINA_DIR_URI . 'assets/js/customize-preview.js', array('jquery'));
-
-            /**
-             * jQuery Validate JS File 
-             * Dependency : jQuery
-             */
-            // wp_dequeue_script('andrina-validate', ANDRINA_DIR_URI . 'assets/js/jquery.validate.min.js', array('jquery'));
-
-            /**
-             * Captcha JS File 
-             * Dependency : jQuery
-             */
-            wp_dequeue_script('andrina-recaptcha', 'https://www.google.com/recaptcha/api.js', array('jquery'), true);
-
-
-            /**
-             * Comment Reply JS File
-             * 
-             */
-            wp_dequeue_script('comment-reply');
-        }
+        wp_dequeue_script('andrina-ddsmoothmenu');
+        wp_dequeue_script('andrina-custom');
+        wp_dequeue_script('andrina-meanmenu_js');
+        wp_dequeue_script('andrina-recaptcha');
+        wp_dequeue_script('comment-reply');
     }
 
     function kailaji_enqueue_scripts() {
+        wp_enqueue_script('kailaji-meanmenu_js', KAILAJI_DIR_URI . 'assets/js/jquery.meanmenu.js', array('jquery'));
         wp_enqueue_script('kailaji-custom', KAILAJI_DIR_URI . 'assets/js/custom.js', array('jquery'));
     }
 
