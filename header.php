@@ -28,44 +28,44 @@
     </head>
     <body <?php body_class(); ?>>
         <div class="ksdjf">                    
-            <div class="container-fluid">
-                <div class="header" id="header-wrapper">
-                    <div class="row" id="header">
-                        <div class="col-xs-4">
-                            <div class="logo">
-                               <?php if (andrina_is_preview()) { ?>
-                                <a class="andrina_logo" href="<?php echo home_url(); ?>"><img src="<?php echo ANDRINA_DIR_URI . 'assets/images/andrina-logo.png';?>" alt="<?php wp_kses_post(bloginfo('name')); ?>"alt="<?php
-                                                                         bloginfo('name');
-                                                                         _e('logo', 'andrina-lite');
-                                                                         ?>"/>
-                                                                        </a>
-                               <?php } elseif(andrina_get_option('andrina_logo') != ''){?>
-                                <a class="andrina_logo" href="<?php echo home_url(); ?>">
-                                    <img src="<?php echo esc_url(andrina_get_option('andrina_logo')); ?>" alt="<?php wp_kses_post(bloginfo('name')); ?>"alt="<?php
-                                            bloginfo('name');
-                                            _e('logo', 'andrina-lite');
-                                        ?>"/>
-                                </a>                              
-                                <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1> 
-                               <?php }else { ?>
-                                    <hgroup>
-                                        <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-                                        <h5 class="site-description"><?php bloginfo('description'); ?></h5>
-                                    </hgroup>
-                                <?php } ?>
-                            </div>
-                        </div>
-                        <div class="col-xs-8">
-                            <!--Start Menu wrapper-->
-                            <div class="menu_wrapper">
-                                <div id="MainNav">
-                                    <?php andrina_nav(); ?>                       
-                                </div>
-                            </div>
-                            <!--End Menu-->
+            <div class="header container-fluid" id="header-wrapper">
+                <div class="row" id="header">
+                    <div class="col-xs-4">
+                        <div class="logo">
+                           <?php if (andrina_is_preview()) { ?>
+                            <a class="andrina_logo" href="<?php echo home_url(); ?>"><img src="<?php echo ANDRINA_DIR_URI . 'assets/images/andrina-logo.png';?>" alt="<?php wp_kses_post(bloginfo('name')); ?>"alt="<?php
+                                                                     bloginfo('name');
+                                                                     _e('logo', 'andrina-lite');
+                                                                     ?>"/>
+                                                                    </a>
+                           <?php } elseif(andrina_get_option('andrina_logo') != ''){?>
+                            <a class="andrina_logo" href="<?php echo home_url(); ?>">
+                                <img src="<?php echo esc_url(andrina_get_option('andrina_logo')); ?>" alt="<?php wp_kses_post(bloginfo('name')); ?>"alt="<?php
+                                        bloginfo('name');
+                                        _e('logo', 'andrina-lite');
+                                    ?>"/>
+                            </a>                              
+                            <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1> 
+                           <?php }else { ?>
+                                <hgroup>
+                                    <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+                                    <h5 class="site-description"><?php bloginfo('description'); ?></h5>
+                                </hgroup>
+                            <?php } ?>
                         </div>
                     </div>
+                    <div class="col-xs-8">
+                        <!--Start Menu wrapper-->
+                        <div class="menu_wrapper">
+                            <div id="MainNav">
+                                <?php andrina_nav(); ?>                       
+                            </div>
+                        </div>
+                        <!--End Menu-->
+                    </div>
                 </div>
+            </div>
+            <div class="container-fluid">
                 <?php
                     product_menu();
                 ?>

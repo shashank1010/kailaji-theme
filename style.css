@@ -33,10 +33,21 @@ h2 {
   max-width: 100%;
   height: auto;
 }
+body {
+  padding-top: 56px;
+}
+
 #header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
   background: #0b3459;
   display: flex;
   align-items: center;
+}
+.admin-bar #header {
+    top: 32px;
 }
 #header img {
   margin: 0;
@@ -85,6 +96,7 @@ h2 {
   font-size: 1.3rem !important;
   line-height: 1.5rem;
   padding: 0 0.5rem;
+  cursor: pointer;
 }
 #menu .ddsmoothmenu .menu-item.fa a{
   position: absolute;
@@ -124,6 +136,7 @@ h2 {
   flex-direction: column;
   list-style: none;
   width: calc(100% / 7);
+  min-width: min-content;
 }
 #product-menu .product-menu .menu-item a {
   padding: 0.5rem;
@@ -261,12 +274,12 @@ h2 {
   margin-bottom: 1rem;
 }
 .about-section-wrapper .about-section .about-slider .flex-control-paging {
-  bottom: -0.15rem;
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   display: block;
   width: auto;
-  margin: 0;
+  margin: 1rem 0 0;
   z-index: 2;
 }
 .about-section-wrapper .about-section .about-slider img {
