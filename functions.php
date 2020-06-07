@@ -249,8 +249,7 @@
     }
 
     function kailaji_enqueue_styles() {
-        wp_enqueue_style('kailaji-responsive', KAILAJI_DIR_URI . "assets/css/responsive-kailaji.css", '', '', 'all');
-        // wp_enqueue_style('kailaji-responsive', KAILAJI_DIR_URI . "assets/css/responsive.css", '', '', 'all');
+        wp_enqueue_style('kailaji-responsive', KAILAJI_DIR_URI . "assets/css/responsive.css", '', '', 'all');
     }
 
     add_action('after_setup_theme', 'kailaji_setup');
