@@ -51,10 +51,38 @@ h2 {
   padding-right: 0;
 }
 
+#menu .ddsmoothmenu {
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+#menu li a {
+  font-size: 17px;
+  margin: 0;
+  /* margin-left: 20px; */
+  position: relative;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  padding: 6px 9px;
+}
+#menu li.current-menu-item a{
+  color: white;
+}
+#menu {
+  position:relative;
+  z-index:999;
+}
+#menu li {
+  list-style-type:none;
+  margin-left:0;
+}
+
 #menu .ddsmoothmenu .menu-item.fa{
   color: #fff;
   position: relative;
-  font-size: 1.3rem;
+  font-size: 1.3rem !important;
   line-height: 1.5rem;
   padding: 0 0.5rem;
 }
@@ -151,6 +179,10 @@ h2 {
   background: none !important;
 }
 
+.main-slider-wrapper {
+  position: relative;
+}
+
 .slider-wrapper {
   max-width: 100%;
   overflow: hidden;
@@ -160,13 +192,14 @@ h2 {
   width: 100%;
   margin: 0;
 }
+
+
 .slider-wrapper .caption-wrapper {
   position: absolute;
   top: 50%;
   color: #fff;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60vw;
   text-align: center;
 }
 .slider-wrapper .caption-wrapper h2 {
@@ -219,7 +252,7 @@ h2 {
 
 .about-section-wrapper .about-section .about-slider {
   position: relative;
-  border-left: 2px dashed #327ea4;
+  border: 0px dashed #327ea4;
 }
 
 .about-section-wrapper .about-section .about-slider h2 {
@@ -228,9 +261,9 @@ h2 {
   margin-bottom: 1rem;
 }
 .about-section-wrapper .about-section .about-slider .flex-control-paging {
-  top: 0.15rem;
-  bottom: auto;
-  right: 1rem;
+  bottom: -0.15rem;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   width: auto;
   margin: 0;
@@ -241,10 +274,18 @@ h2 {
 }
 .about-section-wrapper .about-section .about-slider .textwidget{
   display: flex;
+  flex-wrap: wrap;
 }
 .about-section-wrapper .about-section .about-slider .textwidget > *{
-  flex: 1;
+  flex: 1 0 calc(50% - 1rem);
   margin-top: 0;
+}
+.about-section-wrapper .about-section .about-slider .textwidget > *:nth-of-type(2n - 1) {
+  margin-left: 0.5rem;
+}
+.about-section-wrapper .about-section .about-slider .textwidget img {
+  max-width: 100%;
+  height: auto;
 }
 .about-section-wrapper .about-section .about-slider .textwidget ul {
   list-style: none;
@@ -272,6 +313,9 @@ h2 {
 
 .feature-section .feature_item_img img{
   width: 100%;
+}
+.feature-section h4 {
+  line-height: 1.3;
 }
 
 /**

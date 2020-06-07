@@ -3,13 +3,13 @@
 
     <div class="slider-wrapper">
     <div class="flexslider">
-        <ul class="slides">
+        <ul class="slides clearfix">
             <?php if (andrina_get_option('andrina_slideimage1') != '') { ?>    
                 <li>
                     <div class="slide">
                         <?php
                             $link1 = andrina_get_option('andrina_Slider_link1');
-                            $before1 = $link1 != '' ? '<a class="andrina_slideimage1" href="'. esc_url($link1) .'" >' : '<div class="andrina_slideimage1">';
+                            $before1 = $link1 != '' ? '<a class="slide-image andrina_slideimage1" href="'. esc_url($link1) .'" >' : '<div class="slide-image andrina_slideimage1">';
                             $after1 = $link1 != '' ? '</a>' : '</div>';
                             echo $before1;
                         ?>
@@ -57,7 +57,7 @@
                     <div class="slide">
                         <?php
                             $link2 = andrina_get_option('andrina_Slider_link2');
-                            $before2 = $link2 != '' ? '<a class="andrina_slideimage2" href="'. esc_url($link2) .'" >' : '<div class="andrina_slideimage2">';
+                            $before2 = $link2 != '' ? '<a class="slide-image andrina_slideimage2" href="'. esc_url($link2) .'" >' : '<div class="slide-image andrina_slideimage2">';
                             $after2 = $link2 != '' ? '</a>' : '</div>';
                             echo $before2;
                         ?>
@@ -104,7 +104,7 @@
                     <div class="slide">
                         <?php
                             $link3 = andrina_get_option('andrina_Slider_link3');
-                            $before3 = $link3 != '' ? '<a class="andrina_slideimage3" href="'. esc_url($link3) .'" >' : '<div class="andrina_slideimage3">';
+                            $before3 = $link3 != '' ? '<a class="slide-image andrina_slideimage3" href="'. esc_url($link3) .'" >' : '<div class="slide-image andrina_slideimage3">';
                             $after3 = $link3 != '' ? '</a>' : '</div>';
                             echo $before3;
                         ?>
@@ -150,7 +150,7 @@
             <?php if (andrina_get_option('andrina_slideimage1') == '' && andrina_get_option('andrina_slideimage2') == '') { ?>    
                 <li>
                     <div class="slide">                         
-                        <a href="#" class="andrina_slideimage1" >
+                        <a href="#" class="slide-image andrina_slideimage1" >
                             <img src="<?php echo ANDRINA_DIR_URI; ?>assets/images/slideimg.png"  alt="<?php _e('Slide 6', 'andrina-lite'); ?>"/>
                         </a>
                         <div class="caption-wrapper">                            

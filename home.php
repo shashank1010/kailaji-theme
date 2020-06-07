@@ -5,10 +5,10 @@
  */
 get_header();
 ?>
-<div class="slider-wrapper">
+<div class="main-slider-wrapper">
     <div id="container">
         <div id="example">
-            <div id="slides">
+            <div id="slides" class="clearfix">
                 <?php                
                 get_template_part('templates/slider')
                 ?>
@@ -30,11 +30,11 @@ get_header();
                 }
                 if (is_active_sidebar('home-about-slider')) {
                     ?>
-                    <aside id="about-slider" class='about-slider flexslider' role="complementary">
-                        <ul class="slides">
+                    <div id="about-slider" class='about-slider flexslider' role="complementary">
+                        <ul class="slides clearfix">
                             <?php dynamic_sidebar( 'home-about-slider' ); ?>
                         </ul>
-                    </aside>
+                    </div>
                     <?php
                 }
             ?>

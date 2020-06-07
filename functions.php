@@ -149,18 +149,9 @@
 
     function kailaji_dequeue_scripts() {
         if (!is_admin()) {
+            wp_dequeue_script('andrina-ddsmoothmenu', ANDRINA_DIR_URI . 'assets/js/ddsmoothmenu.js', array('jquery'));
+            wp_dequeue_script('andrina-custom', ANDRINA_DIR_URI . 'assets/js/custom.js', array('jquery'));
 
-            /**
-             * DDSmooth Menu (Navigation Menu) JS File
-             * Dependency : jQuery
-             */
-            // wp_dequeue_script('andrina-ddsmoothmenu', ANDRINA_DIR_URI . 'assets/js/ddsmoothmenu.js', array('jquery'));
-
-            /**
-             * Mean Menu JS File
-             * Dependency : jQuery
-             */
-            // wp_dequeue_script('andrina-meanmenu_js', ANDRINA_DIR_URI . 'assets/js/jquery.meanmenu.js', array('jquery'));
 
             /**
              * Zoom Box JS File
@@ -192,6 +183,10 @@
              */
             wp_dequeue_script('comment-reply');
         }
+    }
+
+    function kailaji_enqueue_scripts() {
+        wp_enqueue_script('kailaji-custom', KAILAJI_DIR_URI . 'assets/js/custom.js', array('jquery'));
     }
 
     /*
@@ -254,11 +249,13 @@
     }
 
     function kailaji_enqueue_styles() {
-        wp_enqueue_style('kailaji-responsive', KAILAJI_DIR_URI . "assets/css/responsive.css", '', '', 'all');
+        wp_enqueue_style('kailaji-responsive', KAILAJI_DIR_URI . "assets/css/responsive-kailaji.css", '', '', 'all');
+        // wp_enqueue_style('kailaji-responsive', KAILAJI_DIR_URI . "assets/css/responsive.css", '', '', 'all');
     }
 
     add_action('after_setup_theme', 'kailaji_setup');
     add_action('wp_enqueue_scripts', 'kailaji_dequeue_scripts', 100);
-    add_action( 'wp_enqueue_scripts', 'kailaji_dequeue_styles', 100 );
-    add_action( 'wp_enqueue_scripts', 'kailaji_enqueue_styles' );
+    add_action( 'wp_enqueue_scripts', 'kailaji_dequeue_styles', 100);
+    add_action( 'wp_enqueue_scripts', 'kailaji_enqueue_scripts', 100);
+    add_action( 'wp_enqueue_scripts', 'kailaji_enqueue_styles', 100);
 ?>
