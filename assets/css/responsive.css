@@ -51,6 +51,11 @@
         padding-left: 1rem;
         padding-bottom: 0.5rem;
     }
+    
+    .feature-section .feature-item-wrap:nth-of-type(2n) ~ .feature-item-wrap,
+    .why-us-section .feature-item-wrap:nth-of-type(2n) ~ .feature-item-wrap {
+        margin-top: 1.5rem;
+    }
 }
 @media (max-width: 767px) {
     .admin-bar .mean-container .mean-bar .meanclose {
@@ -97,8 +102,7 @@
         margin-top: 2rem !important;
     }
 }
-@media (min-width: 768px) and (max-width: 1680px){
-
+@media (min-width: 768px) and (max-width: 991px){
     span.rightarrowclass:after {
         content: '\f061';
         font-family: 'FontAwesome';
