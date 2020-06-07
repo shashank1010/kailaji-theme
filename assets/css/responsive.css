@@ -184,3 +184,16 @@
         width: 100%;
     }
 }
+@media (max-width: 600px) {
+    html[lang] { margin-top: 0 !important; }
+    #wpadminbar {
+        display: none;
+    }
+    .admin-bar #header-wrapper {
+        top: 0;
+    }
+    .admin-bar.mean-container #menu-product-menu {
+        top: 56px;
+        height: calc(100vh - 56px) !important;
+    }
+}
