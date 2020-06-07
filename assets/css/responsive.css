@@ -44,6 +44,9 @@
     }
 }
 @media only screen and (max-width: 767px) {
+    .site-title {
+        display: none;
+    }
     .mean-container #menu-product-menu {
         top: 101px;
         height: calc(100vh - 101px) !important;
@@ -79,9 +82,6 @@
     }
 }
 @media only screen and (max-width: 450px) {
-    .site-title {
-        display: none;
-    }
     .slider-wrapper .caption-wrapper h2 {
         font-size: 18px;
     }
