@@ -79,6 +79,9 @@
     }
 }
 @media only screen and (max-width: 450px) {
+    .site-title {
+        display: none;
+    }
     .slider-wrapper .caption-wrapper h2 {
         font-size: 18px;
     }
