@@ -382,7 +382,8 @@ body {
   margin-top: 0 !important;
   float: none !important;
 }
-.applications-section .gallery br ~ .gallery-item {
+.applications-section .gallery br ~ .gallery-item,
+.packaging-section .gallery br ~ .gallery-item {
   margin-top: 2rem !important;
 }
 
@@ -422,6 +423,8 @@ section.post-packaging-data {
 .page-image {
   background: rgba(0,0,0,0.05);
   position: relative;
+  max-height: 200px;
+  overflow: hidden;
 }
 .page-image .page_head {
   padding: 2rem 0;
@@ -431,12 +434,17 @@ section.post-packaging-data {
   color: #fff;
   text-shadow: 2px 2px 2px #000;
 }
+.page-image .page_head h1{
+  max-width: 60%;
+  margin: 0 auto;
+}
 .page-image img {
   position: absolute;
   top: 50%; left: 50%;
+  height: auto;
   transform: translate(-50%, -50%);
+  max-width: 100%;
 }
-
 
 /**
   Footer
@@ -469,12 +477,4 @@ footer .full-width-footer > .widget {
 footer .full-width-footer > .widget .widgettitle{
   line-height: 2rem;
   text-decoration: underline;
-}
-
-.page-image {
-  max-height: 200px;
-  overflow: hidden;
-}
-.page-image img{
-  max-width: 100%;
 }
