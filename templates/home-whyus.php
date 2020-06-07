@@ -3,7 +3,7 @@
         <h2><span>Why Us</span></h2>
     </div>
     <div class="row">
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-xs-6 feature-item-wrap">
             <div class="feature-item item_1">
             <div class="feature_item_img">
                 <?php if (kailaji_get_option('kailaji_whyus_img1') != '') {
@@ -39,7 +39,7 @@
                     </div>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-xs-6 feature-item-wrap">
             <div class="feature-item item_2">
         <div class="feature_item_img">
                 <?php if (kailaji_get_option('kailaji_whyus_img2') != '') {
@@ -74,7 +74,7 @@
                     </div>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-xs-6 feature-item-wrap">
             <div class="feature-item item_3">
         <div class="feature_item_img">
                 <?php if (kailaji_get_option('kailaji_whyus_img3') != '') {
@@ -109,7 +109,7 @@
                     </div>
             </div>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-3 col-xs-6 feature-item-wrap">
             <div class="feature-item item_4">
         <div class="feature_item_img">
                 <?php if (kailaji_get_option('kailaji_whyus_img4') != '') {

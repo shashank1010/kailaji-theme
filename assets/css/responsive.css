@@ -85,11 +85,13 @@
     .slider-wrapper .caption-wrapper h2 {
         font-size: 18px;
     }
-    .feature-section .feature-item-wrap {
+    .feature-section .feature-item-wrap,
+    .why-us-section .feature-item-wrap {
         float: none;
         width: 100%;
     }
-    .feature-section .feature-item-wrap ~ .feature-item-wrap {
+    .feature-section .feature-item-wrap ~ .feature-item-wrap,
+    .why-us-section .feature-item-wrap ~ .feature-item-wrap {
         margin-top: 1.5rem;
     }
 }
