@@ -478,3 +478,15 @@ footer .full-width-footer > .widget .widgettitle{
   line-height: 2rem;
   text-decoration: underline;
 }
+
+.wp-block-table {
+  margin: 15px 0;
+  overflow: auto;
+}
+.wp-block-table thead th,
+.wp-block-table tbody td {
+  padding: 8px;
+}
+.wp-block-table.is-style-stripes thead th {
+  border-bottom: 2px solid #000;
+}
