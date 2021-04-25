@@ -489,6 +489,10 @@ footer .full-width-footer > .widget .widgettitle{
 .wp-block-table tbody td {
   padding: 8px;
 }
+
+.wp-block-table thead th {
+  font-weight: bold;
+}
 .wp-block-table.is-style-stripes thead th {
   border-bottom: 2px solid #000;
 }
