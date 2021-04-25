@@ -482,6 +482,8 @@ footer .full-width-footer > .widget .widgettitle{
 .wp-block-table {
   margin: 15px 0;
   overflow: auto;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 .wp-block-table thead th,
 .wp-block-table tbody td {
@@ -489,4 +491,14 @@ footer .full-width-footer > .widget .widgettitle{
 }
 .wp-block-table.is-style-stripes thead th {
   border-bottom: 2px solid #000;
+}
+
+.short-code-menu li {
+  list-style: none;
+}
+.short-code-menu li.menu-item-has-children {
+  margin-top: 15px;
+}
+.short-code-menu li li {
+  margin-left: 10px;
 }
