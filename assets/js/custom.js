@@ -70,3 +70,18 @@ jQuery(document).ready(function () {
     jQuery("div.comment-body").prepend("<span class='tip tip-left'></span>");
     jQuery(".depth-5 div.comment-body").append("<div class='reply'></div>");
 });
+
+
+// <!--Start of Tawk.to Script-->
+
+(function(){
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/60b3e3126699c7280da9beb5/1f6vau0a9';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+})();
+
+// <!--End of Tawk.to Script-->
