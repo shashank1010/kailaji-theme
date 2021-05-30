@@ -506,3 +506,33 @@ footer .full-width-footer > .widget .widgettitle{
 .short-code-menu li li {
   margin-left: 10px;
 }
+
+
+
+.form-field {
+  flex: 1 0 50%;
+}
+
+.form-field label, .form-field input {
+  width: 100%;
+  line-height: 2;
+}
+
+.form-field input {
+  padding: 5px 10px;
+  font-weight: normal;
+}
+
+@media (min-width: 787px) {
+  .kailaji-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+
+  .form-field {
+    padding: 0 1em;
+    margin-bottom: 1em;
+  }
+}
