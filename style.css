@@ -43,6 +43,24 @@ body {
   padding-top: 56px;
 }
 
+form button, form input[type="submit"], form input[type="button"] {
+  background: #0b3459;
+  border: 0;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #fff;
+  transition: 0.3s background;
+}
+
+form button:focus:focus-visible,
+form input[type="submit"]:focus:focus-visible,
+form input[type="button"]:focus:focus-visible,
+form button:hover,
+form input[type="submit"]:hover,
+form input[type="button"]:hover {
+  background: #04161f;
+}
+
 #header-wrapper {
   position: fixed;
   top: 0;
