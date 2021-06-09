@@ -197,7 +197,7 @@
         global $fonts;
         $index = andrina_get_option('typography_logo_family');
         $index1 = andrina_get_option('typography_nav_family');
-
+        $selectedFonts = array();
         if (andrina_get_option('typography_logo_family')!=''){
             array_push($selectedFonts, $fonts[$index]);
             echo "<style type='text/css'> h1, h2, h3, h4, h5, h6, .font-family-1{ font-family: " . $fonts[$index] . ", sans-serif!important; font-weight:700; }</style>";
