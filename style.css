@@ -82,6 +82,10 @@ form input[type="button"]:hover {
   color: #fff;
   text-decoration: none;
 }
+#header-wrapper #header .site-title a {
+  font-size: 1.7em;
+  line-height: .7;
+}
 
 .main-content {
   padding-left: 0;
