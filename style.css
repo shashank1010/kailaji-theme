@@ -218,6 +218,15 @@ form input[type="button"]:hover {
 #product-menu .product-menu .current-menu-item > a {
   color: red;
 }
+
+#menu-product-menu > .menu-item-has-children {
+  cursor:pointer;
+}
+
+#menu-product-menu > .menu-item-has-children > a {
+  cursor: pointer;
+}
+
 .flexslider {
   height: auto !important;
   margin: 0 !important;

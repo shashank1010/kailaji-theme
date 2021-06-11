@@ -7,15 +7,25 @@ jQuery(document).ready(function () {
         jQuery(this).removeClass('now_see');
         //        alert('hello');
     });
-
-
 });
+
+
+/**
+ * 
+ * Disable top level product menu links
+ */
+jQuery(document).ready(function() {
+    jQuery("#menu-product-menu > .menu-item-has-children > a").click(function(e) {
+        e.preventDefault()
+        return false;
+    });
+});
+
 
 // add new class in woocommerce product image
 
 jQuery(window).ready(function () {
     jQuery(".woocommerce ul.products li.product a img").wrap("<div class='new'></div>");
-
 });
 
 jQuery(window).load(function () {
@@ -23,6 +33,7 @@ jQuery(window).load(function () {
         controlNav: false
     });
 });
+
 jQuery(window).ready(function () {
     jQuery('.flexslider_gallery').flexslider({
         animation: "slide"
@@ -38,7 +49,6 @@ jQuery(window).load(function () {
     jQuery('div.gallery .thumbnail').masonry({
         itemSelector: '.displaywell',
     });
-
 });
 
 
