@@ -224,7 +224,7 @@ form input[type="button"]:hover {
 }
 
 #menu-product-menu > .menu-item-has-children > a {
-  cursor: pointer;
+  pointer-events: none;
 }
 
 .flexslider {
