@@ -546,6 +546,10 @@ footer .full-width-footer > .widget .widgettitle{
   line-height: 2;
 }
 
+.form-field textarea {
+  height: 100px;
+}
+
 .form-field input {
   padding: 5px 10px;
   font-weight: normal;
