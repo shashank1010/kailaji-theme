@@ -541,7 +541,7 @@ footer .full-width-footer > .widget .widgettitle{
   flex: 1 0 50%;
 }
 
-.form-field label, .form-field input {
+.form-field label, .form-field input, .form-field textarea {
   width: 100%;
   line-height: 2;
 }
