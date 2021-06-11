@@ -10,18 +10,6 @@ jQuery(document).ready(function () {
 });
 
 
-/**
- * 
- * Disable top level product menu links
- */
-jQuery(document).ready(function() {
-    jQuery("#menu-product-menu > .menu-item-has-children > a").click(function(e) {
-        e.preventDefault()
-        return false;
-    });
-});
-
-
 // add new class in woocommerce product image
 
 jQuery(window).ready(function () {
@@ -80,6 +68,22 @@ jQuery(document).ready(function () {
     jQuery("div.comment-body").prepend("<span class='tip tip-left'></span>");
     jQuery(".depth-5 div.comment-body").append("<div class='reply'></div>");
 });
+
+
+
+
+/**
+ * 
+ * Disable top level product menu links
+ */
+ jQuery(document).ready(function() {
+    jQuery("#menu-product-menu > .menu-item-has-children > a").click(function(e) {
+        e.preventDefault()
+        return false;
+    });
+});
+
+
 
 
 // <!--Start of Tawk.to Script-->
